@@ -1,0 +1,20 @@
+{
+    "name": "libmidi",
+    "description": "MIDI audio renderer",
+    "filters":["mididec","rfmidi"],
+    "help": "This filter renders Standard MIDI Files (SMF) to PCM audio using TiMidity++ with the bundled freepats GM instrument set.",
+    "support": [
+        "audio"
+    ],
+    "sources":"https://bevara.ddns.net/sources/libmidi.accessor",
+    "filter_source":{
+        "mididec" : "dec_midi.c",
+        "rfmidi" : "reframe_midi.c"
+    },
+    "extension":{
+      "mid" : "audio",
+      "midi" : "audio",
+      "kar" : "audio"
+    },
+    "licence_required":false
+}
