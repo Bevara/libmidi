@@ -260,7 +260,7 @@ GF_FilterRegister MidiDecoderRegister = {
 	.process = mididec_process,
 };
 
-const GF_FilterRegister * EMSCRIPTEN_KEEPALIVE dynCall_mididec_register(GF_FilterSession *session)
+const GF_FilterRegister * EMSCRIPTEN_KEEPALIVE mididec_register(GF_FilterSession *session)
 {
 	return &MidiDecoderRegister;
 }
@@ -268,5 +268,5 @@ const GF_FilterRegister * EMSCRIPTEN_KEEPALIVE dynCall_mididec_register(GF_Filte
 #include "filter_register.h"
 __attribute__((constructor))
 void register_mididec(void) {
-    gf_filter_auto_register("mididec", dynCall_mididec_register);
+    gf_filter_auto_register("mididec", mididec_register);
 }

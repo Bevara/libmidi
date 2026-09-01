@@ -187,7 +187,7 @@ GF_FilterRegister ReframeMidiRegister = {
 	.process = rfmidi_process,
 	.process_event = rfmidi_process_event};
 
-const GF_FilterRegister * EMSCRIPTEN_KEEPALIVE dynCall_midi_reframe_register(GF_FilterSession *session)
+const GF_FilterRegister * EMSCRIPTEN_KEEPALIVE midi_reframe_register(GF_FilterSession *session)
 {
 	return &ReframeMidiRegister;
 }
@@ -195,5 +195,5 @@ const GF_FilterRegister * EMSCRIPTEN_KEEPALIVE dynCall_midi_reframe_register(GF_
 #include "filter_register.h"
 __attribute__((constructor))
 void register_midi_reframe(void) {
-    gf_filter_auto_register("midi_reframe", dynCall_midi_reframe_register);
+    gf_filter_auto_register("midi_reframe", midi_reframe_register);
 }
