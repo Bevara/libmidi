@@ -1,5 +1,6 @@
 {
     "name": "libmidi",
+    "version": "1.0.1",
     "description": "MIDI audio renderer",
     "filters":["mididec","rfmidi"],
     "help": "This filter renders Standard MIDI Files (SMF) to PCM audio using TiMidity++ with the bundled freepats GM instrument set.",
