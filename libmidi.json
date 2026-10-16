@@ -16,8 +16,12 @@
       "midi" : "audio",
       "kar" : "audio"
     },
-    "licence_required":false,
     "using": [
         "solver_minimal_1"
-    ]
+    ],
+    "patents": {
+        "status": "royalty-free",
+        "note": "MIDI synthesis",
+        "checked": "2026-10-16"
+    }
 }
