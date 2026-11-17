@@ -8,6 +8,7 @@ add_definitions(-fpic)
 SET(LIBMIDI_SRC
         ${CMAKE_CURRENT_SOURCE_DIR}/reframe_midi.c
         ${CMAKE_CURRENT_SOURCE_DIR}/dec_midi.c
+        ${CMAKE_CURRENT_SOURCE_DIR}/solver_shims.c
 )
 
 SET(LIBMIDI_LIB
