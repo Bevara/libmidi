@@ -21,7 +21,8 @@
         "kar": "audio"
     },
     "using": [
-        "mm_solver_1.0.5"
+        "mm_solver_1.0.5",
+        "mm_solver_1.0.6"
     ],
     "patents": {
         "status": "royalty-free",
